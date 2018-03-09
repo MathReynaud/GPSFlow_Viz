@@ -30,7 +30,7 @@
       margin: 0;
       padding: 0;
       overflow: hidden;
-      background-color: #333;
+      background-color: #023858;
   }
 
   li {
@@ -56,10 +56,11 @@
   }
 
   .custom-file-upload {
-      fill: #A0A0A0;
-      background-color: #A0A0A0;
+      fill: #076AA4;
+      background-color: #076AA4;
       font:15px sans-serif;
       font-weight: bold;
+      color : white;
       display: inline-block;
       padding: 6px 12px;
       margin-right: 10px;
@@ -70,9 +71,10 @@
   }
 
   .custom-about {
-    fill: #A0A0A0;
-    background-color: #A0A0A0;
+    fill: #076AA4;
+    background-color: #076AA4;
     font:14px sans-serif;
+    color : white;
     font-weight: bold;
     display: inline-block;
     padding: 6px 12px;
@@ -119,7 +121,7 @@
   }
 
   .title {
-    color: #A0A0A0;
+    color: white;
     font: 30px sans-serif;
     font-weight: bold;
   }
@@ -147,7 +149,7 @@
       </li>
     </ul>
     <div id="heat_map" style="display: inline-block; vertical-align:top;"></div>
-    <div id="google_maps" style="display: inline-block; position: relative"></div>
+    <div id="google_maps" style="display: inline-block; position: relative "></div>
     <div id="resume_day" style="display: inline-block;"></div>
   </div>
 
@@ -357,7 +359,7 @@ function assign_file(){
   main();
 }
 
-d3.json("heatmap_data_2.json", load_demo)
+d3.json("output.json", load_demo)
 
 function load_demo(json_file){
   json = json_file;
